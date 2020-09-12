@@ -1,0 +1,11 @@
+for i in range (1042000,702648265):
+    le=len(str(i))
+    su=0
+    revno=int(i)
+    while(i>0):
+        su+=((i%10)**le)
+        i=i//10
+    if (revno==su):
+        print(su)
+        break
+//Ans 1741725
